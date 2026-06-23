@@ -2,1333 +2,769 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover, maximum-scale=1.0, user-scalable=yes">
-  <meta name="description" content="Katalog harga kue premium untuk ulang tahun, pernikahan, wisuda, dan acara spesial. Hubungi WhatsApp untuk pemesanan.">
-  <meta name="theme-color" content="#6F4E37">
-  <title>Katalog Harga Kue Premium | SweetBloom Bakery</title>
-  
-  <!-- Bootstrap 5 CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=yes, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="description" content="SweetBloom - Kue premium artisanal.">
+  <meta name="theme-color" content="#fcf9f5">
+  <title>SweetBloom · Kue Premium</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root {
-      /* Primary Palette */
-      --cream-light: #FFF9F0;
-      --cream: #FFF3E2;
-      --beige: #F5E6D3;
-      --gold-light: #E8D5B7;
-      --gold: #C9A87C;
-      --brown-light: #A6845B;
-      --brown: #7B5B3A;
-      --brown-dark: #5C3D2E;
-      --choco: #3E2723;
-      
-      /* Surfaces */
-      --white: #FFFFFF;
-      --white-warm: #FFFAF3;
-      --surface: #FFFBF7;
-      
-      /* Text */
-      --text-primary: #2C1810;
-      --text-secondary: #6B5744;
-      --text-muted: #9B8A7A;
-      
-      /* Accent */
-      --whatsapp: #25D366;
-      --whatsapp-dark: #1da851;
-      --star: #F4A340;
-      
-      /* Shadows */
-      --shadow-xs: 0 1px 3px rgba(60, 30, 10, 0.04);
-      --shadow-sm: 0 2px 8px rgba(60, 30, 10, 0.05);
-      --shadow-md: 0 8px 24px rgba(60, 30, 10, 0.07);
-      --shadow-lg: 0 16px 40px rgba(60, 30, 10, 0.09);
-      --shadow-xl: 0 24px 56px rgba(60, 30, 10, 0.11);
-      --shadow-btn: 0 8px 20px rgba(123, 91, 58, 0.25);
-      --shadow-wa: 0 8px 24px rgba(37, 211, 102, 0.3);
-      
-      /* Radius */
-      --radius-xs: 8px;
-      --radius-sm: 12px;
-      --radius: 16px;
-      --radius-lg: 20px;
-      --radius-xl: 28px;
-      --radius-2xl: 36px;
-      --radius-full: 50px;
-      
-      /* Transitions */
-      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-      --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
-      --duration-fast: 0.2s;
-      --duration-normal: 0.35s;
-      --duration-slow: 0.5s;
-    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
+    html { overflow-x: hidden; width: 100%; -webkit-text-size-adjust: 100%; }
 
     body {
-      font-family: 'DM Sans', sans-serif;
-      background-color: var(--cream-light);
-      color: var(--text-primary);
-      overflow-x: hidden;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fcf9f5;
+      color: #3d3329;
       line-height: 1.6;
-    }
-
-    h1, h2, h3, h4, .font-serif {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 600;
-      letter-spacing: -0.4px;
-    }
-
-    /* ========== SCROLLBAR ========== */
-    ::-webkit-scrollbar {
-      width: 6px;
-    }
-    ::-webkit-scrollbar-track {
-      background: var(--cream);
-    }
-    ::-webkit-scrollbar-thumb {
-      background: var(--gold);
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--brown-light);
-    }
-
-    /* ========== SELECTION ========== */
-    ::selection {
-      background: rgba(201, 168, 124, 0.25);
-      color: var(--brown-dark);
-    }
-
-    /* ========== NAVBAR ========== */
-    .navbar {
-      background: rgba(255, 249, 240, 0.82);
-      backdrop-filter: blur(24px) saturate(180%);
-      -webkit-backdrop-filter: blur(24px) saturate(180%);
-      border-bottom: 1px solid rgba(200, 165, 120, 0.18);
-      padding: 0.55rem 0;
-      transition: all var(--duration-normal) var(--ease-out-expo);
-      z-index: 1030;
-    }
-    .navbar.scrolled {
-      background: rgba(255, 249, 240, 0.95);
-      box-shadow: var(--shadow-md);
-      padding: 0.4rem 0;
-      border-bottom-color: rgba(200, 165, 120, 0.25);
-    }
-    .navbar-brand {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.65rem;
-      font-weight: 700;
-      color: var(--choco) !important;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      letter-spacing: -0.2px;
-    }
-    .navbar-brand .logo-icon {
-      width: 40px;
-      height: 40px;
-      background: linear-gradient(135deg, var(--brown), var(--brown-dark));
-      border-radius: var(--radius-sm);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 1.3rem;
-      box-shadow: 0 4px 12px rgba(92, 61, 46, 0.25);
-    }
-    .nav-link {
-      color: var(--text-primary) !important;
-      font-weight: 500;
-      font-size: 0.88rem;
-      margin: 0 3px;
-      border-radius: var(--radius-full);
-      padding: 0.5rem 1.15rem !important;
-      transition: all var(--duration-fast) var(--ease-out-expo);
-      position: relative;
-    }
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: 4px;
-      left: 50%;
-      transform: translateX(-50%) scaleX(0);
-      width: 20px;
-      height: 2.5px;
-      background: var(--brown);
-      border-radius: 10px;
-      transition: transform var(--duration-normal) var(--ease-out-back);
-    }
-    .nav-link:hover::after,
-    .nav-link.active::after {
-      transform: translateX(-50%) scaleX(1);
-    }
-    .nav-link:hover {
-      background: rgba(200, 165, 120, 0.1);
-      color: var(--brown-dark) !important;
-    }
-    .nav-link.active {
-      color: var(--brown-dark) !important;
-      font-weight: 600;
-    }
-    .navbar-toggler {
-      border: none;
-      padding: 0.4rem;
-      box-shadow: none !important;
-    }
-    .navbar-toggler:focus {
-      outline: none;
-    }
-
-    /* ========== HERO ========== */
-    .hero-section {
-      background: linear-gradient(165deg, #FFF9F0 0%, #FEF5E9 25%, #FDF0E0 50%, #F5E6D3 100%);
-      padding: 6rem 0 5rem;
-      border-radius: 0 0 var(--radius-2xl) var(--radius-2xl);
-      position: relative;
-      overflow: hidden;
-      isolation: isolate;
-    }
-    .hero-section::before {
-      content: '';
-      position: absolute;
-      top: -120px;
-      right: -100px;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(201, 168, 124, 0.13) 0%, transparent 70%);
-      border-radius: 50%;
-      z-index: 0;
-      animation: floatBubble 8s ease-in-out infinite;
-    }
-    .hero-section::after {
-      content: '';
-      position: absolute;
-      bottom: -80px;
-      left: -60px;
-      width: 280px;
-      height: 280px;
-      background: radial-gradient(circle, rgba(166, 132, 91, 0.08) 0%, transparent 70%);
-      border-radius: 50%;
-      z-index: 0;
-      animation: floatBubble 6s ease-in-out 2s infinite;
-    }
-    @keyframes floatBubble {
-      0%, 100% { transform: translate(0, 0) scale(1); }
-      33% { transform: translate(15px, -20px) scale(1.05); }
-      66% { transform: translate(-10px, -10px) scale(0.97); }
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-    }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(200, 165, 120, 0.25);
-      border-radius: var(--radius-full);
-      padding: 0.4rem 1.1rem;
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--brown);
-      margin-bottom: 1.2rem;
-      animation: fadeInUp 0.8s var(--ease-out-expo);
-    }
-    .hero-badge i {
-      color: var(--star);
-      font-size: 0.9rem;
-    }
-    .hero-title {
-      font-size: clamp(2.2rem, 5.5vw, 3.6rem);
-      font-weight: 700;
-      color: var(--choco);
-      line-height: 1.1;
-      animation: fadeInUp 0.8s var(--ease-out-expo) 0.1s both;
-    }
-    .hero-title span {
-      background: linear-gradient(135deg, var(--brown), var(--brown-dark));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero-subtitle {
-      color: var(--text-secondary);
-      font-size: 1rem;
-      max-width: 480px;
-      margin: 1rem 0 1.8rem;
-      line-height: 1.7;
-      animation: fadeInUp 0.8s var(--ease-out-expo) 0.2s both;
-    }
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      animation: fadeInUp 0.8s var(--ease-out-expo) 0.3s both;
-    }
-    .btn-primary-custom {
-      background: linear-gradient(135deg, var(--brown), var(--brown-dark));
-      border: none;
-      color: #fff;
-      padding: 0.8rem 2rem;
-      border-radius: var(--radius-full);
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: all var(--duration-normal) var(--ease-out-back);
-      box-shadow: var(--shadow-btn);
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      text-decoration: none;
-      letter-spacing: 0.2px;
-    }
-    .btn-primary-custom:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 30px rgba(92, 61, 46, 0.35);
-      color: #fff;
-      background: linear-gradient(135deg, var(--brown-dark), var(--choco));
-    }
-    .btn-outline-custom {
-      border: 2px solid var(--brown);
-      color: var(--brown);
-      background: transparent;
-      padding: 0.75rem 1.9rem;
-      border-radius: var(--radius-full);
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: all var(--duration-normal) var(--ease-out-back);
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      text-decoration: none;
-    }
-    .btn-outline-custom:hover {
-      background: var(--brown);
-      color: #fff;
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-btn);
-    }
-    .hero-image-wrapper {
-      position: relative;
-      z-index: 1;
-      animation: fadeInRight 0.9s var(--ease-out-expo) 0.3s both;
-    }
-    .hero-image {
+      font-weight: 400;
+      overflow-x: hidden;
       width: 100%;
-      max-width: 420px;
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-xl);
-      aspect-ratio: 1/1;
-      object-fit: cover;
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInRight {
-      from { opacity: 0; transform: translateX(30px); }
-      to { opacity: 1; transform: translateX(0); }
+      max-width: 100vw;
+      position: relative;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
     }
 
-    /* ========== SEARCH & FILTER ========== */
-    .search-filter-wrapper {
-      margin-top: -3rem;
-      position: relative;
-      z-index: 20;
+    h1, h2, h3, .serif { font-family: 'Playfair Display', serif; font-weight: 600; }
+
+    .container { padding-left: 12px !important; padding-right: 12px !important; max-width: 100% !important; overflow: hidden; }
+    @media (min-width: 768px) { .container { padding-left: 20px !important; padding-right: 20px !important; } }
+    @media (min-width: 992px) { .container { max-width: 960px !important; } }
+    @media (min-width: 1200px) { .container { max-width: 1100px !important; } }
+
+    .section-title {
+      font-size: 1.7rem; font-weight: 600; color: #3a2e24;
+      margin-bottom: 0.4rem; display: inline-block; position: relative;
     }
-    .search-filter-card {
-      background: var(--white);
-      border-radius: var(--radius-xl);
-      padding: 1.4rem 1.4rem;
-      box-shadow: var(--shadow-lg);
-      border: 1px solid rgba(200, 165, 120, 0.12);
-      transition: all var(--duration-normal) var(--ease-out-expo);
+    .section-title::after {
+      content: ''; position: absolute; bottom: -5px; left: 0;
+      width: 40px; height: 2px; background: #b4946e; border-radius: 2px;
     }
-    .search-filter-card:hover {
-      box-shadow: var(--shadow-xl);
+
+    /* ===== BANNER ===== */
+    #topBanner {
+      background: url('https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?q=80&w=1936&auto=format&fit=crop') center/cover no-repeat;
+      position: relative; min-height: 260px; display: flex; align-items: center; justify-content: center;
+      border-radius: 0 0 1.8rem 1.8rem; overflow: hidden; width: 100%;
+    }
+    .banner-overlay {
+      background: linear-gradient(0deg, rgba(30,18,12,0.6) 0%, rgba(20,12,8,0.4) 100%);
+      position: absolute; inset: 0; z-index: 1;
+    }
+    .banner-content { position: relative; z-index: 2; text-align: center; color: white; padding: 1rem; width: 100%; }
+    .banner-logo { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 700; letter-spacing: 2px; text-shadow: 0 3px 15px rgba(0,0,0,0.4); }
+    .btn-close-banner {
+      position: absolute; top: 12px; right: 12px; z-index: 10;
+      background: rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.3); color: white;
+      font-size: 1rem; width: 32px; height: 32px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; line-height: 1;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background: rgba(252, 249, 245, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.03); padding: 0.5rem 0.8rem;
+      border-radius: 0 0 1.4rem 1.4rem; width: 100%;
+    }
+    .navbar-brand { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #3a2e24 !important; padding: 0; }
+    .navbar-toggler { border: none !important; padding: 0.3rem 0.5rem; font-size: 1.3rem; box-shadow: none !important; }
+    .nav-link { font-weight: 500; color: #3d3329 !important; padding: 0.6rem 0.4rem !important; font-size: 0.95rem; }
+
+    /* ===== HERO ===== */
+    .hero-section { padding: 2rem 0 1.5rem; }
+    .hero-headline { font-size: 2rem; font-weight: 700; line-height: 1.15; color: #3a2e24; }
+    .hero-img-wrap { width: 100%; max-width: 280px; margin: 0 auto; display: block; }
+    .hero-img-wrap img {
+      width: 100%; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%;
+      box-shadow: 0 20px 35px -10px rgba(100, 70, 40, 0.2); border: 3px solid white; display: block;
+    }
+    .btn-gold {
+      background: #b4946e; border: none; color: white; border-radius: 2.5rem;
+      padding: 0.6rem 1.3rem; font-weight: 600; font-size: 0.85rem;
+      box-shadow: 0 4px 12px -3px rgba(180, 148, 110, 0.4);
+      white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; text-decoration: none;
+    }
+    .btn-outline-gold {
+      border: 1.5px solid #cbb295; color: #3a2e24; background: transparent; border-radius: 2.5rem;
+      padding: 0.55rem 1.2rem; font-weight: 600; font-size: 0.85rem;
+      white-space: nowrap; display: inline-flex; align-items: center; gap: 4px; text-decoration: none;
+    }
+
+    /* ===== SEARCH ===== */
+    .search-filter-panel {
+      background: #ffffff; border-radius: 1.2rem; padding: 1rem 0.9rem;
+      box-shadow: 0 15px 30px -10px rgba(60, 40, 20, 0.08);
+      border: 1px solid rgba(180, 148, 110, 0.2); margin-bottom: 1.2rem;
     }
     .form-control, .form-select {
-      border-radius: var(--radius-full);
-      padding: 0.65rem 1.3rem;
-      border: 1.5px solid #E8DDD0;
-      background: #FFFBF7;
-      font-size: 0.88rem;
-      font-family: 'DM Sans', sans-serif;
-      transition: all var(--duration-fast) var(--ease-out-expo);
-      color: var(--text-primary);
+      border: 1.5px solid #e5ddd3; background: #fdfaf6; border-radius: 2rem;
+      padding: 0.5rem 1rem; font-size: 0.85rem; min-height: 42px; width: 100%; box-shadow: none;
     }
-    .form-control:focus, .form-select:focus {
-      border-color: var(--brown-light);
-      box-shadow: 0 0 0 4px rgba(166, 132, 91, 0.1);
-      background: #fff;
-      outline: none;
+    .form-control:focus, .form-select:focus { border-color: #b4946e; box-shadow: 0 0 0 2px rgba(180,148,110,0.1); background: white; outline: none; }
+
+    /* ===== PRODUCT CARD ===== */
+    .product-card {
+      background: #ffffff; border-radius: 0.9rem; overflow: hidden;
+      box-shadow: 0 6px 16px -6px rgba(0,0,0,0.06); border: 1px solid rgba(0,0,0,0.02);
+      height: 100%; display: flex; flex-direction: column; min-width: 0;
     }
-    .form-control::placeholder {
-      color: var(--text-muted);
+    .product-card .img-frame {
+      width: 100%; aspect-ratio: 1/1; overflow: hidden; background: #f4efe8; position: relative;
     }
-    .input-group-text {
-      background: #FFFBF7;
-      border: 1.5px solid #E8DDD0;
-      border-right: none;
-      border-radius: var(--radius-full) 0 0 var(--radius-full);
-      padding-left: 1.3rem;
-      color: var(--brown-light);
+    .product-card .img-frame img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
     }
-    .form-control.border-start-0 {
-      border-left: none;
-      border-radius: 0 var(--radius-full) var(--radius-full) 0;
+    .product-card .badge-premium {
+      position: absolute; top: 6px; right: 6px;
+      background: rgba(255,255,255,0.9); padding: 0.2rem 0.5rem; border-radius: 1.5rem;
+      font-size: 0.55rem; font-weight: 700; color: #3a2e24; letter-spacing: 0.5px; z-index: 2;
     }
-    .form-select {
-      cursor: pointer;
-      appearance: none;
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%237B5B3A' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-      background-repeat: no-repeat;
-      background-position: right 1rem center;
-      background-size: 14px;
-      padding-right: 2.5rem;
+    .product-card .card-detail {
+      padding: 0.7rem 0.6rem 0.6rem; display: flex; flex-direction: column; flex: 1; min-width: 0;
+    }
+    .product-card .category-tag {
+      font-size: 0.6rem; text-transform: uppercase; letter-spacing: 1.2px;
+      color: #d4a9a0; font-weight: 700; margin-bottom: 0.1rem;
+    }
+    .product-card .product-name {
+      font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 600;
+      margin: 0.1rem 0; color: #3a2e24; line-height: 1.2; word-break: break-word;
+    }
+    .product-card .desc-text {
+      font-size: 0.68rem; color: #7a6e62; flex: 1; margin-bottom: 0.3rem;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .product-card .price {
+      font-size: 0.9rem; font-weight: 700; color: #5e4b3a; white-space: nowrap;
+    }
+    .product-card .whatsapp-hint {
+      font-size: 0.6rem; color: #a88b6e; display: flex; align-items: center; gap: 2px;
+      margin-top: 0.2rem; border-top: 1px dashed rgba(180,148,110,0.25); padding-top: 0.3rem;
     }
 
-    /* ========== INFO BANNER ========== */
-    .info-banner {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      padding: 1rem 1.3rem;
-      margin: 1rem 0 0.5rem;
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      box-shadow: var(--shadow-sm);
-      border-left: 4px solid var(--whatsapp);
-      font-size: 0.84rem;
-      color: var(--text-secondary);
-      line-height: 1.6;
-      transition: all var(--duration-normal) var(--ease-out-expo);
-    }
-    .info-banner:hover {
-      box-shadow: var(--shadow-md);
-      border-left-width: 6px;
-    }
-    .info-banner i {
-      font-size: 1.5rem;
-      color: var(--whatsapp);
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .info-banner strong {
-      color: var(--text-primary);
+    /* Grid */
+    .product-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.7rem; width: 100%; }
+
+    /* ===== CUSTOM ===== */
+    .custom-section {
+      background: linear-gradient(135deg, #f3ede5 0%, #f9f4ec 100%);
+      border-radius: 1.6rem; padding: 2rem 1rem; text-align: center;
+      box-shadow: 0 15px 30px -10px rgba(60, 40, 20, 0.08);
+      border: 1px solid rgba(180, 148, 110, 0.2); margin: 1.5rem 0;
     }
 
-    /* ========== PRODUCT GRID ========== */
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-      margin-top: 1.2rem;
-      min-height: 200px;
-      transition: opacity var(--duration-fast) ease;
+    /* ===== LOCATION ===== */
+    .location-card {
+      position: relative; border-radius: 1.2rem; overflow: hidden;
+      box-shadow: 0 15px 30px -10px rgba(60, 40, 20, 0.08); width: 100%;
     }
+    .location-card img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; display: block; }
+    .location-overlay {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: rgba(45, 34, 24, 0.85); backdrop-filter: blur(10px); color: white;
+      padding: 0.8rem 1rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.4rem;
+    }
+    .location-overlay p { font-size: 0.75rem; margin: 0; line-height: 1.4; }
 
-    @media (min-width: 576px) {
-      .product-grid {
-        gap: 16px;
-      }
+    /* ===== PAGINATION ===== */
+    .page-link {
+      border: none; background: #f0ebe2; color: #3a2e24; border-radius: 8px;
+      margin: 0 2px; font-weight: 600; padding: 0.35rem 0.6rem;
+      font-size: 0.8rem; min-width: 32px; text-align: center; line-height: 1.4; cursor: pointer;
     }
+    .page-item.active .page-link { background: #b4946e; color: white; }
 
-    @media (min-width: 768px) {
-      .product-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .product-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      .product-grid {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 22px;
-      }
-    }
-
-    .product-grid.loading {
-      opacity: 0.4;
-      pointer-events: none;
-      filter: blur(1px);
-    }
-
-    /* ========== CARD ========== */
-    .cake-card {
-      background: var(--white);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-xs);
-      transition: all var(--duration-slow) var(--ease-out-expo);
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      overflow: hidden;
-      border: 1px solid rgba(0, 0, 0, 0.04);
-      position: relative;
-      cursor: default;
-    }
-    .cake-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-xl);
-      border-color: rgba(200, 165, 120, 0.2);
-    }
-    .card-img-wrapper {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      overflow: hidden;
-      background: #F9F4EC;
-      position: relative;
-    }
-    .card-img-wrapper::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 60%, rgba(60, 30, 10, 0.03) 100%);
-      z-index: 1;
-      pointer-events: none;
-    }
-    .card-img-top {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.6s var(--ease-out-expo);
-      display: block;
-      position: relative;
-      z-index: 0;
-    }
-    .cake-card:hover .card-img-top {
-      transform: scale(1.08);
-    }
-    .card-body {
-      padding: 0.9rem 0.85rem 0.85rem;
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      position: relative;
-      z-index: 1;
-      background: var(--white);
-    }
-    .cake-category {
-      font-size: 0.65rem;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: var(--brown-light);
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-    }
-    .cake-title {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--text-primary);
-      margin-bottom: 0.2rem;
-      line-height: 1.3;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .cake-desc {
-      color: var(--text-muted);
-      font-size: 0.72rem;
-      margin-bottom: 0.5rem;
-      flex: 1;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      line-height: 1.45;
-    }
-    .cake-price-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    .cake-price {
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--brown);
-      letter-spacing: -0.3px;
-    }
-    .price-tag {
-      display: inline-block;
-      background: linear-gradient(135deg, #FFF3E2, #FDF0E0);
-      color: var(--brown-dark);
-      padding: 0.3rem 0.7rem;
-      border-radius: var(--radius-full);
-      font-size: 0.73rem;
-      font-weight: 600;
-      border: 1px solid rgba(166, 132, 91, 0.2);
-      white-space: nowrap;
-    }
-
-    @media (max-width: 575px) {
-      .card-body {
-        padding: 0.65rem 0.65rem 0.65rem;
-      }
-      .cake-title {
-        font-size: 0.82rem;
-      }
-      .cake-desc {
-        font-size: 0.67rem;
-        -webkit-line-clamp: 1;
-      }
-      .cake-price {
-        font-size: 0.88rem;
-      }
-      .price-tag {
-        font-size: 0.66rem;
-        padding: 0.22rem 0.5rem;
-      }
-      .cake-category {
-        font-size: 0.6rem;
-        letter-spacing: 0.8px;
-      }
-    }
-
-    /* ========== PAGINATION ========== */
-    .pagination-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 2.5rem;
-      gap: 8px;
-      flex-wrap: wrap;
-      animation: fadeInUp 0.6s var(--ease-out-expo);
-    }
-    .page-btn {
-      min-width: 40px;
-      height: 40px;
-      border-radius: var(--radius-full);
-      border: 1.5px solid #E8DDD0;
-      background: var(--white);
-      color: var(--text-primary);
-      font-weight: 500;
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: all var(--duration-fast) var(--ease-out-back);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 14px;
-      font-family: 'DM Sans', sans-serif;
-      user-select: none;
-    }
-    .page-btn:hover:not(.active):not(:disabled) {
-      background: var(--cream);
-      border-color: var(--brown-light);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow-sm);
-    }
-    .page-btn:active:not(.active):not(:disabled) {
-      transform: scale(0.95);
-    }
-    .page-btn.active {
-      background: linear-gradient(135deg, var(--brown), var(--brown-dark));
-      color: #fff;
-      border-color: transparent;
-      font-weight: 700;
-      box-shadow: 0 6px 18px rgba(92, 61, 46, 0.35);
-    }
-    .page-btn:disabled {
-      opacity: 0.3;
-      cursor: not-allowed;
-      pointer-events: none;
-      background: #f5f5f5;
-    }
-    .page-info {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin: 0 10px;
-      font-weight: 500;
-      white-space: nowrap;
-    }
-    .page-dots {
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      font-weight: 600;
-      letter-spacing: 2px;
-    }
-    @media (max-width: 575px) {
-      .page-btn {
-        min-width: 34px;
-        height: 34px;
-        font-size: 0.75rem;
-        padding: 0 8px;
-      }
-      .page-info {
-        font-size: 0.7rem;
-        margin: 0 4px;
-      }
-      .pagination-wrapper {
-        gap: 4px;
-      }
-      .page-dots {
-        width: 30px;
-        height: 30px;
-        font-size: 0.8rem;
-      }
-    }
-
-    /* ========== CUSTOM CAKE SECTION ========== */
-    .custom-cake {
-      background: linear-gradient(160deg, #FDF0E0 0%, #F5E6D3 40%, #FFF3E2 100%);
-      border-radius: var(--radius-2xl);
-      padding: 3.5rem 2rem;
-      margin: 3.5rem 0 2rem;
-      text-align: center;
-      border: 1px solid rgba(200, 165, 120, 0.18);
-      position: relative;
-      overflow: hidden;
-      isolation: isolate;
-    }
-    .custom-cake::before {
-      content: '';
-      position: absolute;
-      top: -60px;
-      right: -60px;
-      width: 200px;
-      height: 200px;
-      background: radial-gradient(circle, rgba(201, 168, 124, 0.12) 0%, transparent 70%);
-      border-radius: 50%;
-      z-index: 0;
-    }
-    .custom-cake > * {
-      position: relative;
-      z-index: 1;
-    }
-    .btn-wa {
-      background: var(--whatsapp);
-      border: none;
-      color: #fff;
-      font-weight: 700;
-      padding: 0.9rem 2.4rem;
-      border-radius: var(--radius-full);
-      font-size: 0.95rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      box-shadow: var(--shadow-wa);
-      text-decoration: none;
-      transition: all var(--duration-normal) var(--ease-out-back);
-      letter-spacing: 0.2px;
-    }
-    .btn-wa:hover {
-      background: var(--whatsapp-dark);
-      color: #fff;
-      transform: translateY(-4px);
-      box-shadow: 0 14px 32px rgba(37, 211, 102, 0.4);
-    }
-    .btn-wa:active {
-      transform: scale(0.96);
-    }
-
-    /* ========== FOOTER ========== */
-    footer {
-      background: var(--white);
-      border-radius: var(--radius-2xl) var(--radius-2xl) 0 0;
-      padding: 2.5rem 1.2rem 1.5rem;
-      margin-top: 2.5rem;
-      border-top: 1px solid rgba(0, 0, 0, 0.04);
-      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.02);
-    }
-    .social-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: var(--radius-full);
-      background: var(--cream);
-      color: var(--brown);
-      font-size: 1.15rem;
-      transition: all var(--duration-fast) var(--ease-out-back);
-      text-decoration: none;
-      margin-right: 8px;
-    }
-    .social-link:hover {
-      background: var(--brown);
-      color: #fff;
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-btn);
-    }
-
-    /* ========== BACK TO TOP ========== */
+    /* ===== BACK TO TOP ===== */
     .back-to-top {
-      position: fixed;
-      bottom: 28px;
-      right: 22px;
-      width: 46px;
-      height: 46px;
-      background: linear-gradient(135deg, var(--brown), var(--brown-dark));
-      color: #fff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      box-shadow: 0 8px 24px rgba(92, 61, 46, 0.4);
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(16px);
-      transition: all var(--duration-normal) var(--ease-out-back);
-      z-index: 1050;
-      border: none;
-      cursor: pointer;
+      position: fixed; bottom: 16px; right: 12px; width: 38px; height: 38px;
+      background: #b4946e; color: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12); opacity: 0; visibility: hidden;
+      transition: 0.3s; z-index: 99; border: none; cursor: pointer; padding: 0;
     }
-    .back-to-top.show {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-    .back-to-top:hover {
-      transform: translateY(-5px) scale(1.05);
-      box-shadow: 0 12px 30px rgba(92, 61, 46, 0.5);
-    }
-    .back-to-top:active {
-      transform: scale(0.9);
+    .back-to-top.show { opacity: 1; visibility: visible; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #f7f2ea; border-radius: 1.8rem 1.8rem 0 0;
+      margin-top: 1.5rem; padding: 1.8rem 1rem 1.2rem; width: 100%;
     }
 
-    /* ========== ANIMATIONS ========== */
-    [data-reveal] {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.65s var(--ease-out-expo), transform 0.65s var(--ease-out-expo);
+    /* ===== RESPONSIVE ===== */
+    @media (min-width: 576px) {
+      .product-grid { gap: 1rem; }
+      .banner-logo { font-size: 3.2rem; }
+      .hero-headline { font-size: 2.6rem; }
+      .location-card img { aspect-ratio: 16/9; }
+      .location-overlay p { font-size: 0.85rem; }
     }
-    [data-reveal].revealed {
-      opacity: 1;
-      transform: translateY(0);
+    @media (min-width: 768px) {
+      .product-grid { grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+      .section-title { font-size: 2rem; }
+      .hero-headline { font-size: 3rem; }
+      .hero-img-wrap { max-width: 340px; }
     }
-
-    /* ========== RESPONSIVE FINE-TUNING ========== */
-    @media (max-width: 380px) {
-      .navbar-brand {
-        font-size: 1.3rem;
-      }
-      .navbar-brand .logo-icon {
-        width: 32px;
-        height: 32px;
-        font-size: 1rem;
-      }
-      .hero-section {
-        padding: 4.5rem 0 3.5rem;
-      }
-      .product-grid {
-        gap: 10px;
-      }
-      .card-body {
-        padding: 0.5rem;
-      }
+    @media (min-width: 992px) {
+      .product-grid { grid-template-columns: repeat(4, 1fr); gap: 1.3rem; }
+      .hero-headline { font-size: 3.4rem; }
+      .hero-img-wrap { max-width: 380px; }
+      .section-title { font-size: 2.3rem; }
+    }
+    @media (min-width: 1200px) {
+      .product-grid { gap: 1.5rem; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ==================== NAVBAR ==================== -->
+  <!-- ============================================================
+       TOP BANNER
+       Ganti foto: ganti URL di background CSS #topBanner
+       ============================================================ -->
+  <div id="topBanner">
+    <button class="btn-close-banner" id="closeBannerBtn" aria-label="Tutup banner">✕</button>
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <div class="banner-logo">SweetBloom</div>
+      <p style="font-size: 0.9rem; opacity: 0.95; margin-top: 0.3rem;">Setiap potongan adalah mahakarya rasa</p>
+      <!-- GANTI NOMOR WA: ubah 6281234567890 -->
+      <a href="https://wa.me/6281234567890" class="btn btn-light rounded-pill px-3 py-1 mt-2 fw-semibold" style="font-size: 0.8rem;"><i class="bi bi-whatsapp me-1"></i>Pesan Sekarang</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
   <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <span class="logo-icon">
-          <i class="bi bi-cake2"></i>
-        </span>
-        SweetBloom
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-3" style="color: var(--brown-dark);"></i>
+    <div class="container-fluid px-2">
+      <a class="navbar-brand" href="#">SweetBloom</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#katalog">Katalog</a></li>
           <li class="nav-item"><a class="nav-link" href="#custom">Custom</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
           <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- ==================== HERO ==================== -->
-  <section id="home" class="hero-section">
+  <!-- ============================================================
+       HERO
+       Ganti foto: ubah src di img
+       ============================================================ -->
+  <section class="hero-section">
     <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7 hero-content">
-          <div class="hero-badge">
-            <i class="bi bi-star-fill"></i> Premium Bakery Since 2018
-          </div>
-          <h1 class="hero-title">
-            Katalog Harga<br><span>Kue Premium</span>
-          </h1>
-          <p class="hero-subtitle">
-            Pilihan kue terbaik untuk ulang tahun, pernikahan, wisuda, dan momen spesial Anda. 
-            Lihat harga, lalu hubungi kami untuk pemesanan.
-          </p>
-          <div class="hero-buttons">
-            <a href="#katalog" class="btn-primary-custom">
-              <i class="bi bi-grid-fill"></i> Lihat Katalog
-            </a>
-            <a href="https://wa.me/6281234567890?text=Halo%20SweetBloom%2C%20saya%20mau%20tanya%20soal%20kue." target="_blank" rel="noopener" class="btn-outline-custom">
-              <i class="bi bi-whatsapp"></i> Chat WhatsApp
-            </a>
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+          <span class="badge rounded-pill mb-2 px-2 py-1" style="background:#ede3d3; color:#5e4b3a; font-weight:600; font-size:0.7rem;">✨ Artisanal Premium</span>
+          <h1 class="hero-headline">Cita Rasa <br>Kue Premium</h1>
+          <p class="text-secondary mt-1 mb-2" style="font-size:0.85rem;">Dibuat dengan tangan, dari bahan alami pilihan terbaik.</p>
+          <div class="d-flex gap-2 flex-wrap justify-content-center justify-content-lg-start">
+            <a href="#katalog" class="btn btn-gold"><i class="bi bi-grid-fill me-1"></i>Katalog</a>
+            <!-- GANTI NOMOR WA -->
+            <a href="https://wa.me/6281234567890" class="btn btn-outline-gold"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
           </div>
         </div>
-        <div class="col-lg-5 d-none d-lg-flex justify-content-center hero-image-wrapper">
-          <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=500&q=85" 
-               alt="Kue Premium SweetBloom" 
-               class="hero-image" 
-               loading="eager"
-               width="420" 
-               height="420">
+        <div class="col-12 col-lg-5 order-1 order-lg-2">
+          <div class="hero-img-wrap">
+            <!-- 🔷🔷🔷 GANTI FOTO HERO DI SINI 🔷🔷🔷 -->
+            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=400&auto=format&fit=crop" alt="Kue premium" width="280" height="280" loading="eager">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== SEARCH & FILTER ==================== -->
-  <div class="container search-filter-wrapper" id="katalog">
-    <div class="search-filter-card">
-      <div class="row g-3 align-items-center">
-        <div class="col-sm-6">
-          <div class="input-group">
-            <span class="input-group-text"><i class="bi bi-search"></i></span>
-            <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Cari nama kue favorit...">
-          </div>
+  <!-- ============================================================
+       KATALOG - SEARCH & FILTER
+       ============================================================ -->
+  <div class="container" id="katalog">
+    <div class="search-filter-panel">
+      <div class="row g-2 align-items-end">
+        <div class="col-12 col-sm-5">
+          <label class="form-label fw-semibold text-secondary small mb-1"><i class="bi bi-search"></i> Cari kue</label>
+          <input type="text" id="searchInput" class="form-control" placeholder="Red velvet, tiramisu..." inputmode="search">
         </div>
-        <div class="col-sm-4">
+        <div class="col-8 col-sm-4">
+          <label class="form-label fw-semibold text-secondary small mb-1"><i class="bi bi-funnel"></i> Harga</label>
           <select id="priceFilter" class="form-select">
-            <option value="semua">💰 Semua Harga</option>
-            <option value="rendah">🟢 Di bawah Rp100.000</option>
-            <option value="sedang">🟡 Rp100.000 - Rp300.000</option>
-            <option value="tinggi">🔴 Di atas Rp300.000</option>
+            <option value="all">Semua Harga</option>
+            <option value="below100">Di bawah Rp100rb</option>
+            <option value="100-300">Rp100rb – Rp300rb</option>
+            <option value="above300">Di atas Rp300rb</option>
           </select>
         </div>
-        <div class="col-sm-2 text-sm-end">
-          <span class="text-muted small fw-medium" id="productCount">50 kue tersedia</span>
+        <div class="col-4 col-sm-3 text-end">
+          <span class="badge bg-white text-dark p-1 px-2 rounded-pill" id="productCount" style="border:1px solid #ddd; font-size:0.7rem;">0 kue</span>
         </div>
       </div>
     </div>
 
-    <!-- INFO BANNER -->
-    <div class="info-banner">
-      <i class="bi bi-info-circle-fill"></i>
-      <div>
-        <strong>Katalog harga saja.</strong> Untuk memesan, silakan <strong>chat WhatsApp</strong> 
-        dengan menyebutkan nama kue yang Anda pilih. Admin kami siap membantu proses pemesanan.
+    <h2 class="section-title mb-2">✨ Koleksi Pilihan</h2>
+
+    <!-- ============================================================
+         ⭐⭐⭐ AREA PRODUK - TAMBAH / EDIT / HAPUS DI SINI ⭐⭐⭐
+         
+         CARA TAMBAH PRODUK BARU:
+         Copy-paste 1 blok <div class="product-card"> di bawah ini
+         lalu ganti:
+         - src="..." → link foto
+         - category-tag → nama kategori
+         - product-name → nama kue
+         - desc-text → deskripsi
+         - price → harga
+         - data-category → kategori untuk filter
+         - data-price → harga angka untuk filter
+         ============================================================ -->
+    <div class="product-grid" id="productGrid">
+      
+      <!-- ===== PRODUK 1 ===== -->
+      <div class="product-card" data-category="Signature" data-price="375000">
+        <div class="img-frame">
+          <!-- 🔷 GANTI FOTO -->
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Mewah Signature" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <!-- 🔷 GANTI KATEGORI -->
+          <span class="category-tag">Signature</span>
+          <!-- 🔷 GANTI NAMA -->
+          <h3 class="product-name">Mewah Signature</h3>
+          <!-- 🔷 GANTI DESKRIPSI -->
+          <p class="desc-text">Signature cake premium dengan krim lembut.</p>
+          <!-- 🔷 GANTI HARGA (tampilan) -->
+          <div class="price">Rp 375.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
       </div>
-    </div>
+
+      <!-- ===== PRODUK 2 ===== -->
+      <div class="product-card" data-category="Coklat Belgia" data-price="95000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Lembut Coklat Belgia" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Coklat Belgia</span>
+          <h3 class="product-name">Lembut Coklat Belgia</h3>
+          <p class="desc-text">Coklat Belgia asli dengan tekstur lembut.</p>
+          <div class="price">Rp 95.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 3 ===== -->
+      <div class="product-card" data-category="Buah Segar" data-price="135000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Spesial Buah Segar" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Buah Segar</span>
+          <h3 class="product-name">Spesial Buah Segar</h3>
+          <p class="desc-text">Buah segar pilihan dengan whipped cream.</p>
+          <div class="price">Rp 135.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 4 ===== -->
+      <div class="product-card" data-category="Keju Lembut" data-price="255000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Premium Keju Lembut" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Keju Lembut</span>
+          <h3 class="product-name">Premium Keju Lembut</h3>
+          <p class="desc-text">Keju lembut premium lumer di mulut.</p>
+          <div class="price">Rp 255.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 5 ===== -->
+      <div class="product-card" data-category="Red Velvet" data-price="375000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Elegan Red Velvet" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Red Velvet</span>
+          <h3 class="product-name">Elegan Red Velvet</h3>
+          <p class="desc-text">Red velvet klasik dengan cream cheese.</p>
+          <div class="price">Rp 375.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 6 ===== -->
+      <div class="product-card" data-category="Matcha" data-price="95000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Classic Matcha" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Matcha</span>
+          <h3 class="product-name">Classic Matcha</h3>
+          <p class="desc-text">Matcha Jepang asli dengan rasa autentik.</p>
+          <div class="price">Rp 95.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 7 ===== -->
+      <div class="product-card" data-category="Tiramisu" data-price="135000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Mewah Tiramisu" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Tiramisu</span>
+          <h3 class="product-name">Mewah Tiramisu</h3>
+          <p class="desc-text">Tiramisu Italia dengan mascarpone asli.</p>
+          <div class="price">Rp 135.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 8 ===== -->
+      <div class="product-card" data-category="Caramel" data-price="255000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Lembut Caramel" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Caramel</span>
+          <h3 class="product-name">Lembut Caramel</h3>
+          <p class="desc-text">Caramel homemade dengan sea salt.</p>
+          <div class="price">Rp 255.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 9 ===== -->
+      <div class="product-card" data-category="Pistachio" data-price="375000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Spesial Pistachio" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Pistachio</span>
+          <h3 class="product-name">Spesial Pistachio</h3>
+          <p class="desc-text">Pistachio premium dengan krim kacang.</p>
+          <div class="price">Rp 375.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 10 ===== -->
+      <div class="product-card" data-category="Lemon" data-price="95000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Premium Lemon" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Lemon</span>
+          <h3 class="product-name">Premium Lemon</h3>
+          <p class="desc-text">Lemon segar dengan buttercream ringan.</p>
+          <div class="price">Rp 95.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 11 ===== -->
+      <div class="product-card" data-category="Signature" data-price="135000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Elegan Signature" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Signature</span>
+          <h3 class="product-name">Elegan Signature</h3>
+          <p class="desc-text">Signature cake edisi terbatas.</p>
+          <div class="price">Rp 135.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- ===== PRODUK 12 ===== -->
+      <div class="product-card" data-category="Coklat Belgia" data-price="255000">
+        <div class="img-frame">
+          <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=300&h=300&fit=crop" alt="Classic Coklat Belgia" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">Coklat Belgia</span>
+          <h3 class="product-name">Classic Coklat Belgia</h3>
+          <p class="desc-text">Coklat Belgia klasik favorit semua.</p>
+          <div class="price">Rp 255.000</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+
+      <!-- 
+      ⭐⭐⭐ COPY PASTE TEMPLATE DI ATAS UNTUK TAMBAH PRODUK ⭐⭐⭐
+      
+      TEMPLATE KOSONG:
+      <div class="product-card" data-category="NAMA_KATEGORI" data-price="HARGA_ANGKA">
+        <div class="img-frame">
+          <img src="LINK_FOTO" alt="NAMA_ALT" loading="lazy" width="150" height="150">
+          <span class="badge-premium">✦ Premium</span>
+        </div>
+        <div class="card-detail">
+          <span class="category-tag">NAMA_KATEGORI</span>
+          <h3 class="product-name">NAMA_KUE</h3>
+          <p class="desc-text">DESKRIPSI_SINGKAT</p>
+          <div class="price">Rp HARGA_TAMPILAN</div>
+          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
+        </div>
+      </div>
+      -->
+
+    </div><!-- /product-grid -->
+
+    <!-- Pagination (dibuat otomatis oleh JS) -->
+    <div class="d-flex justify-content-center mt-3" id="paginationContainer"></div>
   </div>
 
-  <!-- ==================== PRODUCT GRID ==================== -->
-  <div class="container">
-    <div class="product-grid" id="productGrid" aria-label="Daftar kue premium"></div>
-    
-    <!-- PAGINATION -->
-    <div class="pagination-wrapper" id="paginationWrapper" aria-label="Navigasi halaman"></div>
-  </div>
-
-  <!-- ==================== CUSTOM CAKE ==================== -->
+  <!-- ============================================================
+       CUSTOM CAKE
+       ============================================================ -->
   <div class="container" id="custom">
-    <div class="custom-cake">
-      <h2 style="color: var(--choco); font-size: clamp(1.6rem, 3.5vw, 2.2rem); margin-bottom: 0.6rem;">
-        Ingin Kue Sesuai Keinginan?
-      </h2>
-      <p style="color: var(--text-secondary); max-width: 520px; margin: 0 auto 1.6rem; font-size: 0.92rem; line-height: 1.7;">
-        Kirim gambar referensi atau deskripsikan desain impian Anda. 
-        Kami siap membuat kue custom untuk acara spesial Anda.
-      </p>
-      <a href="https://wa.me/6281234567890?text=Halo%20SweetBloom%2C%20saya%20ingin%20custom%20kue." target="_blank" rel="noopener" class="btn-wa">
-        <i class="bi bi-whatsapp fs-5"></i> Chat WhatsApp untuk Custom Kue
-      </a>
-      <p style="margin-top: 1rem; font-size: 0.82rem; color: var(--text-muted);">
-        <i class="bi bi-telephone-fill me-1"></i> WhatsApp: <strong>0812-3456-7890</strong>
-      </p>
+    <div class="custom-section">
+      <span class="badge rounded-pill mb-2 px-2 py-1" style="background:#d4b89640; color:#5e4b3a; font-weight:600; font-size:0.7rem;">🎂 Personalisasi</span>
+      <h2 class="section-title d-block mb-2">Custom Cake</h2>
+      <p class="text-secondary mb-2" style="font-size:0.85rem;">Wujudkan kue personal sesuai tema spesial Anda.</p>
+      <!-- GANTI NOMOR WA -->
+      <a href="https://wa.me/6281234567890?text=Halo%20SweetBloom%2C%20saya%20ingin%20konsultasi%20kue%20custom" class="btn btn-gold mt-1 px-3"><i class="bi bi-whatsapp me-1"></i>Diskusi WhatsApp</a>
     </div>
   </div>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer id="kontak">
-    <div class="container">
-      <div class="row gy-4 align-items-center">
-        <div class="col-md-5">
-          <h5 style="color: var(--choco); font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 1.3rem;">
-            <i class="bi bi-cake2 me-2" style="color: var(--brown);"></i>SweetBloom Bakery
-          </h5>
-          <p style="color: var(--text-muted); font-size: 0.85rem; margin: 0.3rem 0 0;">
-            Kue premium handmade untuk momen berharga Anda.
-          </p>
+  <!-- ============================================================
+       LOKASI
+       ============================================================ -->
+  <div class="container mb-3" id="lokasi">
+    <h2 class="section-title mb-2">📍 Temukan Kami</h2>
+    <div class="location-card">
+      <!-- 🔷🔷🔷 GANTI FOTO LOKASI 🔷🔷🔷 -->
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=600&auto=format&fit=crop" alt="Lokasi toko" loading="lazy" width="600" height="450">
+      <div class="location-overlay">
+        <div>
+          <!-- 🔷🔷🔷 GANTI ALAMAT 🔷🔷🔷 -->
+          <p class="fw-semibold">Jl. Mawar Indah No. 45, Kebayoran Baru</p>
+          <!-- 🔷🔷🔷 GANTI JAM BUKA 🔷🔷🔷 -->
+          <p class="small opacity-75" style="font-size:0.65rem;">🕒 Buka 08.00 – 20.00 WIB</p>
         </div>
-        <div class="col-md-4">
-          <p style="margin-bottom: 6px; font-size: 0.88rem;">
-            <i class="bi bi-whatsapp me-2" style="color: var(--whatsapp);"></i>0812-3456-7890
-          </p>
-          <p style="margin: 0; font-size: 0.88rem;">
-            <i class="bi bi-envelope me-2" style="color: var(--brown-light);"></i>halo@sweetbloom.id
-          </p>
-        </div>
-        <div class="col-md-3 text-md-end">
-          <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="social-link" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-        </div>
+        <!-- 🔷🔷🔷 GANTI LINK GOOGLE MAPS 🔷🔷🔷 -->
+        <a href="https://maps.google.com/?q=Jl.+Mawar+Indah+No.+45+Kebayoran+Baru+Jakarta+Selatan" target="_blank" rel="noopener" class="btn btn-light rounded-pill px-2 py-1 fw-semibold" style="font-size:0.7rem;"><i class="bi bi-geo-alt"></i> Maps</a>
       </div>
-      <hr style="border-color: rgba(0, 0, 0, 0.05); margin: 1.2rem 0;">
-      <p style="text-align: center; color: var(--text-muted); font-size: 0.78rem; margin: 0;">
-        &copy; 2025 SweetBloom Bakery. All rights reserved. Made with ❤️
-      </p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer id="kontak">
+    <div class="container text-center">
+      <h3 class="serif fw-bold" style="font-size:1.6rem;">SweetBloom</h3>
+      <p class="text-secondary mb-2" style="font-size:0.8rem;">Kue premium untuk setiap perayaan.</p>
+      <div class="d-flex justify-content-center gap-2 flex-wrap text-secondary mb-2" style="font-size:0.75rem;">
+        <!-- GANTI NOMOR & EMAIL -->
+        <span><i class="bi bi-whatsapp text-success"></i> 0812-3456-7890</span>
+        <span><i class="bi bi-envelope"></i> halo@sweetbloom.id</span>
+      </div>
+      <div class="mb-2">
+        <!-- GANTI LINK SOSMED -->
+        <a href="#" class="text-secondary mx-1 fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-secondary mx-1 fs-5" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      </div>
+      <p class="small text-muted border-top pt-2 mt-1" style="font-size:0.65rem;">© 2026 SweetBloom. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- ==================== BACK TO TOP ==================== -->
-  <button class="back-to-top" id="backToTopBtn" aria-label="Kembali ke atas">
-    <i class="bi bi-arrow-up-short"></i>
-  </button>
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas"><i class="bi bi-arrow-up"></i></button>
 
-  <!-- ==================== SCRIPTS ==================== -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ============================================================
+       JAVASCRIPT - HANYA UNTUK SEARCH, FILTER, PAGINATION, SCROLL
+       ============================================================ -->
   <script>
     (function() {
-      'use strict';
-
-      // ========== DATA PRODUK ==========
-      const cakeNames = [
-        "Red Velvet Classic", "Choco Indulgence", "Strawberry Dream", "Blueberry Bliss", "Lemon Cheesecake",
-        "Tiramisu Delight", "Black Forest", "Vanilla Buttercream", "Matcha Green Tea", "Caramel Toffee",
-        "Oreo Cheesecake", "Mango Passion", "Coconut Cloud", "Raspberry Rose", "Hazelnut Praline",
-        "Marble Chocolate", "Pandan Gula Melaka", "Salted Caramel", "Espresso Mocha", "Peach Melba",
-        "Cherry Blossom", "Almond Joy", "Peanut Butter Cup", "Cookies and Cream", "Strawberry Shortcake",
-        "Pineapple Coconut", "Orange Chiffon", "Banana Caramel", "Cappuccino Cake", "Mint Chocolate",
-        "Berry Pavlova", "White Chocolate Raspberry", "Dark Chocolate Truffle", "Lavender Honey", "Pistachio Rose",
-        "S'mores Cake", "Cinnamon Roll", "Maple Walnut", "Pumpkin Spice", "Apple Crumble",
-        "Pear Almond", "Fig & Honey", "Earl Grey Tea", "Chai Spice", "Gingerbread",
-        "Carrot Walnut", "Zesty Lime", "Passionfruit Curd", "Guava Cream", "Lychee Rose"
-      ];
-
-      const categories = ["Signature", "Best Seller", "Premium", "Classic", "Favorite", "Special", "Exclusive", "Popular"];
+      // Ambil SEMUA card produk langsung dari HTML
+      const productGrid = document.getElementById('productGrid');
+      const allCards = Array.from(productGrid.querySelectorAll('.product-card'));
       
-      const products = [];
-      for (let i = 0; i < 50; i++) {
-        const ranges = [
-          { min: 65000, max: 98000 },
-          { min: 105000, max: 290000 },
-          { min: 310000, max: 550000 }
-        ];
-        const r = ranges[Math.floor(Math.random() * ranges.length)];
-        const price = Math.floor(Math.random() * (r.max - r.min + 1)) + r.min;
-        products.push({
-          id: i,
-          name: cakeNames[i],
-          category: categories[i % categories.length],
-          desc: "Kue lembut premium dengan bahan berkualitas, cocok untuk berbagai acara spesial Anda.",
-          price: price,
-          image: `https://source.unsplash.com/400x400/?cake,dessert,pastry&sig=${i}`
-        });
-      }
-
-      // ========== STATE ==========
-      const ITEMS_PER_PAGE = 12;
-      let currentPage = 1;
-      let filteredProducts = [...products];
-
-      // ========== DOM ELEMENTS ==========
-      const grid = document.getElementById('productGrid');
-      const paginationWrapper = document.getElementById('paginationWrapper');
+      const pagination = document.getElementById('paginationContainer');
       const searchInput = document.getElementById('searchInput');
       const priceFilter = document.getElementById('priceFilter');
-      const countEl = document.getElementById('productCount');
+      const countSpan = document.getElementById('productCount');
 
-      // ========== RENDER PRODUCTS ==========
-      function renderProducts(page) {
-        if (!grid) return;
-        
-        const start = (page - 1) * ITEMS_PER_PAGE;
-        const end = start + ITEMS_PER_PAGE;
-        const pageItems = filteredProducts.slice(start, end);
-        
-        grid.classList.add('loading');
-        
-        setTimeout(() => {
-          grid.innerHTML = '';
-          
-          if (pageItems.length === 0) {
-            grid.innerHTML = `
-              <div style="grid-column:1/-1; text-align:center; padding:3rem 1rem;">
-                <i class="bi bi-emoji-frown" style="font-size:3rem; color:var(--brown-light); display:block; margin-bottom:1rem;"></i>
-                <p style="color:var(--text-muted); font-size:1rem;">Kue tidak ditemukan.</p>
-                <p style="color:var(--text-muted); font-size:0.8rem;">Coba kata kunci atau filter harga lain.</p>
-              </div>`;
-            grid.classList.remove('loading');
-            return;
-          }
-          
-          pageItems.forEach((p, idx) => {
-            const card = document.createElement('div');
-            card.className = 'cake-card';
-            card.setAttribute('data-reveal', '');
-            card.style.transitionDelay = `${idx * 0.04}s`;
-            card.innerHTML = `
-              <div class="card-img-wrapper">
-                <img src="${p.image}" class="card-img-top" alt="${p.name}" loading="lazy" 
-                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&q=70';">
-              </div>
-              <div class="card-body">
-                <span class="cake-category">${p.category}</span>
-                <h3 class="cake-title">${p.name}</h3>
-                <p class="cake-desc">${p.desc}</p>
-                <div class="cake-price-row">
-                  <span class="cake-price">Rp ${p.price.toLocaleString('id-ID')}</span>
-                  <span class="price-tag">Lihat Katalog</span>
-                </div>
-              </div>
-            `;
-            grid.appendChild(card);
-          });
-          
-          grid.classList.remove('loading');
-          setTimeout(revealCards, 50);
-          
-          // Smooth scroll ke grid
-          const gridRect = grid.getBoundingClientRect();
-          if (gridRect.top < 0 || gridRect.top > window.innerHeight) {
-            const scrollTarget = gridRect.top + window.scrollY - 100;
-            window.scrollTo({ top: scrollTarget, behavior: 'smooth' });
-          }
-        }, 180);
-      }
+      let currentPage = 1;
+      let filteredCards = [...allCards];
 
-      function revealCards() {
-        const cards = document.querySelectorAll('[data-reveal]');
-        cards.forEach(card => {
-          const rect = card.getBoundingClientRect();
-          if (rect.top < window.innerHeight - 20) {
-            card.classList.add('revealed');
-          }
+      // Fungsi filter
+      function applyFilters() {
+        const term = searchInput.value.toLowerCase().trim();
+        const priceVal = priceFilter.value;
+
+        filteredCards = allCards.filter(card => {
+          // Ambil data dari atribut HTML
+          const category = card.dataset.category.toLowerCase();
+          const name = (card.querySelector('.product-name')?.textContent || '').toLowerCase();
+          const price = parseInt(card.dataset.price) || 0;
+
+          // Filter search
+          if (term && !name.includes(term) && !category.includes(term)) return false;
+
+          // Filter harga
+          if (priceVal === 'below100') return price < 100000;
+          if (priceVal === '100-300') return price >= 100000 && price <= 300000;
+          if (priceVal === 'above300') return price > 300000;
+
+          return true;
         });
+
+        currentPage = 1;
+        render();
       }
 
-      // ========== RENDER PAGINATION ==========
-      function renderPagination() {
-        if (!paginationWrapper) return;
-        
-        const totalPages = Math.ceil(filteredProducts.length / ITEMS_PER_PAGE);
-        
+      // Debounce search
+      function debounce(fn, d) {
+        let t;
+        return (...args) => {
+          clearTimeout(t);
+          t = setTimeout(() => fn(...args), d);
+        };
+      }
+
+      searchInput.addEventListener('input', debounce(applyFilters, 300));
+      priceFilter.addEventListener('change', applyFilters);
+
+      // Fungsi render halaman
+      function render() {
+        const perPage = (window.innerWidth < 768) ? 8 : 12;
+        const totalPages = Math.ceil(filteredCards.length / perPage);
+        const start = (currentPage - 1) * perPage;
+        const end = start + perPage;
+
+        // Update counter
+        countSpan.textContent = `${filteredCards.length} kue`;
+
+        // Sembunyikan semua card dulu
+        allCards.forEach(card => card.style.display = 'none');
+
+        // Tampilkan card untuk halaman ini
+        filteredCards.slice(start, end).forEach(card => {
+          card.style.display = '';
+        });
+
+        // Pagination
         if (totalPages <= 1) {
-          paginationWrapper.innerHTML = '';
+          pagination.innerHTML = '';
           return;
         }
-        
-        // Reset currentPage jika out of bounds
-        if (currentPage > totalPages) {
-          currentPage = totalPages;
+
+        let html = '<ul class="pagination flex-wrap justify-content-center mb-0">';
+        for (let i = 1; i <= totalPages; i++) {
+          html += `<li class="page-item ${i === currentPage ? 'active' : ''}">
+            <a class="page-link" href="#" data-page="${i}">${i}</a>
+          </li>`;
         }
-        
-        let html = '';
-        
-        // Previous
-        html += `<button class="page-btn" ${currentPage === 1 ? 'disabled' : ''} data-page="${currentPage - 1}" aria-label="Halaman sebelumnya">
-          <i class="bi bi-chevron-left"></i>
-        </button>`;
-        
-        // First page
-        if (currentPage > 3) {
-          html += `<button class="page-btn" data-page="1">1</button>`;
-          if (currentPage > 4) {
-            html += `<span class="page-dots">⋯</span>`;
-          }
-        }
-        
-        // Page numbers
-        const startPage = Math.max(1, currentPage - 2);
-        const endPage = Math.min(totalPages, currentPage + 2);
-        
-        for (let i = startPage; i <= endPage; i++) {
-          html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
-        }
-        
-        // Last page
-        if (currentPage < totalPages - 2) {
-          if (currentPage < totalPages - 3) {
-            html += `<span class="page-dots">⋯</span>`;
-          }
-          html += `<button class="page-btn" data-page="${totalPages}">${totalPages}</button>`;
-        }
-        
-        // Next
-        html += `<button class="page-btn" ${currentPage === totalPages ? 'disabled' : ''} data-page="${currentPage + 1}" aria-label="Halaman selanjutnya">
-          <i class="bi bi-chevron-right"></i>
-        </button>`;
-        
-        // Info
-        html += `<span class="page-info">Hal ${currentPage} / ${totalPages}</span>`;
-        
-        paginationWrapper.innerHTML = html;
-        
-        // Event listeners
-        paginationWrapper.querySelectorAll('.page-btn').forEach(btn => {
-          btn.addEventListener('click', function() {
-            const page = parseInt(this.getAttribute('data-page'));
-            if (page && page !== currentPage && page >= 1 && page <= totalPages) {
-              currentPage = page;
-              renderProducts(currentPage);
-              renderPagination();
+        pagination.innerHTML = html + '</ul>';
+
+        // Event listener pagination
+        pagination.querySelectorAll('.page-link').forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const p = parseInt(this.dataset.page);
+            if (p && p !== currentPage && p > 0 && p <= totalPages) {
+              currentPage = p;
+              render();
+              document.getElementById('katalog').scrollIntoView({ behavior: 'smooth', block: 'start' });
+              window.scrollBy(0, -60);
             }
           });
         });
       }
 
-      // ========== FILTER ==========
-      function applyFilter() {
-        const term = searchInput.value.toLowerCase().trim();
-        const f = priceFilter.value;
-        
-        filteredProducts = [...products];
-        
-        if (term) {
-          filteredProducts = filteredProducts.filter(p => 
-            p.name.toLowerCase().includes(term) || 
-            p.category.toLowerCase().includes(term)
-          );
-        }
-        
-        if (f === 'rendah') {
-          filteredProducts = filteredProducts.filter(p => p.price < 100000);
-        } else if (f === 'sedang') {
-          filteredProducts = filteredProducts.filter(p => p.price >= 100000 && p.price <= 300000);
-        } else if (f === 'tinggi') {
-          filteredProducts = filteredProducts.filter(p => p.price > 300000);
-        }
-        
-        countEl.textContent = `${filteredProducts.length} kue tersedia`;
-        currentPage = 1;
-        renderProducts(currentPage);
-        renderPagination();
-      }
-
-      // ========== DEBOUNCE SEARCH ==========
-      let debounceTimer;
-      function debouncedFilter() {
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(applyFilter, 300);
-      }
-
-      // ========== INIT ==========
-      function init() {
-        countEl.textContent = `${products.length} kue tersedia`;
-        renderProducts(1);
-        renderPagination();
-      }
-
-      init();
-
-      // ========== EVENT LISTENERS ==========
-      searchInput.addEventListener('input', debouncedFilter);
-      priceFilter.addEventListener('change', applyFilter);
-      
-      window.addEventListener('scroll', revealCards, { passive: true });
-      window.addEventListener('resize', revealCards, { passive: true });
-
-      // Navbar scroll
-      let lastScroll = 0;
+      // Scroll effects
+      let scrollTicking = false;
       window.addEventListener('scroll', () => {
-        const nav = document.getElementById('mainNavbar');
-        const btn = document.getElementById('backToTopBtn');
-        const currentScroll = window.scrollY;
-        
-        if (currentScroll > 50) {
-          nav.classList.add('scrolled');
-        } else {
-          nav.classList.remove('scrolled');
+        if (!scrollTicking) {
+          requestAnimationFrame(() => {
+            const y = window.scrollY;
+            document.getElementById('mainNavbar').classList.toggle('scrolled', y > 40);
+            document.getElementById('backToTop').classList.toggle('show', y > 400);
+            scrollTicking = false;
+          });
+          scrollTicking = true;
         }
-        
-        if (currentScroll > 500) {
-          btn.classList.add('show');
-        } else {
-          btn.classList.remove('show');
-        }
-        
-        lastScroll = currentScroll;
       }, { passive: true });
 
       // Back to top
-      document.getElementById('backToTopBtn').addEventListener('click', () => {
+      document.getElementById('backToTop').addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
-      // Smooth scroll internal links
-      document.querySelectorAll('a.nav-link, .btn-primary-custom').forEach(link => {
-        link.addEventListener('click', function(e) {
+      // Close banner
+      document.getElementById('closeBannerBtn').addEventListener('click', () => {
+        const banner = document.getElementById('topBanner');
+        banner.style.transition = '0.35s ease';
+        banner.style.opacity = '0';
+        banner.style.maxHeight = '0';
+        banner.style.minHeight = '0';
+        banner.style.padding = '0';
+        banner.style.margin = '0';
+        banner.style.overflow = 'hidden';
+        setTimeout(() => banner.remove(), 350);
+      });
+
+      // Smooth scroll untuk semua anchor link
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
           const href = this.getAttribute('href');
-          if (href && href.startsWith('#')) {
-            e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-              const offset = 80;
-              const position = target.getBoundingClientRect().top + window.scrollY - offset;
-              window.scrollTo({ top: position, behavior: 'smooth' });
-              const navCollapse = document.getElementById('navbarContent');
-              if (navCollapse && navCollapse.classList.contains('show')) {
-                new bootstrap.Collapse(navCollapse).hide();
-              }
+          if (href === '#' || !href) return;
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            const offset = 55;
+            const position = target.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: position, behavior: 'smooth' });
+            const nc = document.getElementById('navbarNav');
+            if (nc.classList.contains('show')) {
+              document.querySelector('.navbar-toggler').click();
             }
           }
         });
       });
 
-      // Update active nav link on scroll
-      window.addEventListener('scroll', () => {
-        const sections = document.querySelectorAll('section[id], div[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-        let currentSection = '';
-        
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop - 120;
-          if (window.scrollY >= sectionTop) {
-            currentSection = section.getAttribute('id');
-          }
-        });
-        
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${currentSection}`) {
-            link.classList.add('active');
-          }
-        });
-      }, { passive: true });
+      // Resize handler
+      let resizeDebounce;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeDebounce);
+        resizeDebounce = setTimeout(() => render(), 250);
+      });
 
-      // Initial reveal
-      setTimeout(revealCards, 300);
+      // Render pertama kali
+      render();
     })();
   </script>
 </body>
