@@ -71,13 +71,140 @@
 
     /* ===== NAVBAR ===== */
     .navbar {
-      background: rgba(252, 249, 245, 0.85); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-      box-shadow: 0 2px 15px rgba(0,0,0,0.03); padding: 0.5rem 0.8rem;
-      border-radius: 0 0 1.4rem 1.4rem; width: 100%;
+      background: rgba(255, 255, 255, 0.9); /* Lebih solid agar kontras */
+      backdrop-filter: blur(20px); 
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Shadow lebih lembut dan dalam */
+      padding: 0.6rem 1rem; 
+      border-radius: 0 0 1.6rem 1.6rem; 
+      width: 100%;
+      border-bottom: 1px solid rgba(180, 148, 110, 0.25); /* Garis halus emas */
+      transition: all 0.3s ease;
     }
-    .navbar-brand { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: #3a2e24 !important; padding: 0; }
-    .navbar-toggler { border: none !important; padding: 0.3rem 0.5rem; font-size: 1.3rem; box-shadow: none !important; }
-    .nav-link { font-weight: 500; color: #3d3329 !important; padding: 0.6rem 0.4rem !important; font-size: 0.95rem; }
+    /* Style saat navbar sticky dan di-scroll */
+    .navbar.scrolled {
+      background: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+      border-bottom: 1px solid rgba(180, 148, 110, 0.4);
+    }
+
+    .navbar-brand { 
+      font-family: 'Playfair Display', serif; 
+      font-size: 1.5rem; 
+      font-weight: 700; 
+      color: #3a2e24 !important; 
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; /* Jarak antara logo bulat dan teks */
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    /* Container logo bulat di navbar */
+    .nav-logo-circle {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #b4946e;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      background-color: #f4efe8; /* fallback sebelum ganti foto */
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .navbar-brand:hover .nav-logo-circle {
+      transform: scale(1.05);
+    }
+
+    /* Style teks brand */
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.2;
+    }
+    .brand-main {
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #3a2e24;
+    }
+    .brand-sub {
+      font-size: 0.6rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+      color: #b4946e;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .navbar-toggler { 
+      border: none !important; 
+      padding: 0.4rem 0.5rem; 
+      font-size: 1.3rem; 
+      box-shadow: none !important; 
+      color: #3a2e24;
+      background: rgba(180, 148, 110, 0.08);
+      border-radius: 12px;
+      transition: all 0.2s;
+    }
+    .navbar-toggler:hover {
+      background: rgba(180, 148, 110, 0.15);
+    }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(58, 46, 36, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .nav-link { 
+      font-weight: 600; 
+      color: #3d3329 !important; 
+      padding: 0.7rem 0.6rem !important; 
+      font-size: 0.9rem; 
+      transition: all 0.25s ease;
+      border-radius: 2rem;
+      margin: 0 0.1rem;
+      letter-spacing: 0.2px;
+      position: relative;
+    }
+    .nav-link:hover {
+      color: #b4946e !important;
+      background: rgba(180, 148, 110, 0.06);
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background: #b4946e;
+      border-radius: 4px;
+      transition: width 0.25s ease;
+    }
+    .nav-link:hover::after {
+      width: 40%;
+    }
+
+    /* Responsif padding navbar */
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(20px);
+        border-radius: 1.2rem;
+        padding: 1rem 0.8rem;
+        margin-top: 0.8rem;
+        box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
+        border: 1px solid rgba(180, 148, 110, 0.15);
+      }
+      .nav-link {
+        padding: 0.8rem 1rem !important;
+        font-size: 0.95rem;
+      }
+      .nav-link::after {
+        display: none;
+      }
+    }
 
     /* ===== HERO ===== */
     .hero-section { padding: 2rem 0 1.5rem; }
@@ -242,16 +369,26 @@
   </div>
 
   <!-- ============================================================
-       NAVBAR
+       NAVBAR - SUDAH DIPERBAIKI DENGAN LOGO BULAT & KONTRAS ELEGAN
        ============================================================ -->
   <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
     <div class="container-fluid px-2">
-      <a class="navbar-brand" href="#">Rizqi Cake & Tart</a>
+      <!-- Brand dengan logo bulat + teks -->
+      <a class="navbar-brand" href="#">
+        <!-- 🔷🔷🔷 GANTI FOTO LOGO BULAT NAVBAR DI SINI (src="logo-nav.png") 🔷🔷🔷 -->
+        <img src="logo.png" alt="Logo Rizqi" class="nav-logo-circle" width="38" height="38" loading="eager">
+        <span class="brand-text">
+          <span class="brand-main">Rizqi Cake</span>
+          <span class="brand-sub">& Tart</span>
+        </span>
+      </a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Menu">
         <span class="navbar-toggler-icon"></span>
       </button>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#katalog">Katalog</a></li>
           <li class="nav-item"><a class="nav-link" href="#custom">Custom</a></li>
@@ -318,35 +455,19 @@
 
     <!-- ============================================================
          ⭐⭐⭐ AREA PRODUK - TAMBAH / EDIT / HAPUS DI SINI ⭐⭐⭐
-         
-         CARA TAMBAH PRODUK BARU:
-         Copy-paste 1 blok <div class="product-card"> di bawah ini
-         lalu ganti:
-         - src="..." → link foto
-         - category-tag → nama kategori
-         - product-name → nama kue
-         - desc-text → deskripsi
-         - price → harga
-         - data-category → kategori untuk filter
-         - data-price → harga angka untuk filter
          ============================================================ -->
     <div class="product-grid" id="productGrid">
       
       <!-- ===== PRODUK 1 ===== -->
       <div class="product-card" data-category="Signature" data-price="375000">
         <div class="img-frame">
-          <!-- 🔷 GANTI FOTO -->
           <img src="1.jpg" alt="Mewah Signature" loading="lazy" width="150" height="150">
           <span class="badge-premium">✦ Premium</span>
         </div>
         <div class="card-detail">
-          <!-- 🔷 GANTI KATEGORI -->
           <span class="category-tag">Kue lamaran</span>
-          <!-- 🔷 GANTI NAMA -->
           <h3 class="product-name">Golden Bloom Cake</h3>
-          <!-- 🔷 GANTI DESKRIPSI -->
           <p class="desc-text">Cake lembut dengan lapisan krim ringan dan dekorasi bunga segar bernuansa elegan.</p>
-          <!-- 🔷 GANTI HARGA (tampilan) -->
           <div class="price">Rp 375.000</div>
           <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
         </div>
@@ -586,30 +707,6 @@
           <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
         </div>
       </div>
-
-
-
-
-
-      
-
-
-      <!-- 
-      ⭐⭐⭐ COPY PASTE TEMPLATE DI ATAS UNTUK TAMBAH PRODUK ⭐⭐⭐
-      
-      TEMPLATE KOSONG:
-      <div class="product-card" data-category="NAMA_KATEGORI" data-price="HARGA_ANGKA">
-        <div class="img-frame">
-          <img src="LINK_FOTO" alt="NAMA_ALT" loading="lazy" width="150" height="150">
-          <span class="badge-premium">✦ Premium</span>
-        </div>
-        <div class="card-detail">
-          <p class="desc-text">DESKRIPSI_SINGKAT</p>
-          <div class="price">Rp HARGA_TAMPILAN</div>
-          <div class="whatsapp-hint"><i class="bi bi-whatsapp"></i> Chat untuk pesan</div>
-        </div>
-      </div>
-      -->
 
     </div><!-- /product-grid -->
 
